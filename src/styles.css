@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+.uppercase{
+    text-transform: uppercase;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    background: cadetblue;
+}
+.footer-copyright{
+    padding: 10px;
+}
+
+.footer-copyright > a{
+    color: #000;
+}
+
+
+main {
+    margin-left: 0px;
+}
+.navbar-default {
+    background-color: #0698cf2b;
+    border-color: #e7e7e7;
+}
+
+.product-cart{
+    border: 1px solid #333333cf;
+    box-shadow: 2px 1px 1px 2px #33333357;
+    padding: 10px 10px 10px 10px;
+    border-radius: 18px;
+}
+
+.product-column{
+    padding: 10px;
+}
+
+.product-img{
+    width:150px;
+    display: block;
+    margin: auto;
+}
+

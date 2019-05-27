@@ -1,0 +1,33 @@
+<app-navbar-admin></app-navbar-admin>
+<div class="container">
+        <table id="example" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>ORDER ID</th>
+                        <th>PAYMENT METHOD</th>
+                        <th>TRANSACTION ID</th>
+                        <th>PAYMENT STATUS</th>
+                        <th>CREATE AT</th>
+                        <th>OPTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let payment of payments">
+                        <td>{{ payment.id }}</td>
+                        <td>{{ payment.orderId }}</td>
+                        <td>{{ payment.transactionId }}</td>
+                        <td>{{ payment.paymentMethod }}</td>
+                        <td>{{ payment.paymentStatus }}</td>
+                        <td>{{ payment.paymentCreateAt }}</td>
+                        <td>
+                            <button class="btn btn-sm btn-info" (click)="editPayment(payment.id)">Edit</button>&nbsp;
+                            <button class="btn btn-sm btn-danger" (click)="deletePayment(payment.id)" >Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+        </table>
+</div>
+
+
+
